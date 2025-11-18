@@ -5,25 +5,24 @@
   <title>AI Study Platform v3</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body> 
-<section id="summary-section">
-  <h2>Summary</h2>
-  <div id="summary">Your summary will appear here.</div>
-</section>
-
+<body>
   <h1>AI Study Platform v3</h1>
 
+  <!-- Input section -->
   <section id="create">
     <textarea id="prompt" placeholder="Type study text here..." rows="4"></textarea>
+    <input type="file" id="fileUpload" multiple>
     <input type="text" id="tags" placeholder="Add tags separated by commas">
     <button id="generate">Generate Flashcards & Quiz</button>
   </section>
 
+  <!-- Summary section -->
   <section id="summary-section">
     <h2>Summary</h2>
     <div id="summary">Your summary will appear here.</div>
   </section>
 
+  <!-- Dashboard: flashcards & quizzes -->
   <section id="dashboard">
     <h2>Flashcards</h2>
     <div id="flashcards">Flashcards will appear here.</div>
@@ -32,6 +31,7 @@
     <div id="quizzes">Quizzes will appear here.</div>
   </section>
 
+  <!-- Stats -->
   <section id="stats">
     <h2>Progress</h2>
     <p id="streak">Study streak: 0</p>
