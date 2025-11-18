@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Study Platform v3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>AI Study Platform v3</h1>
 
+  <section id="create">
+    <textarea id="prompt" placeholder="Type study text here..." rows="4"></textarea>
+    <input type="file" id="fileUpload" multiple>
+    <input type="text" id="tags" placeholder="Add tags separated by commas">
+    <button id="generate">Generate Flashcards & Quiz</button>
+  </section>
+
+  <section id="dashboard">
+    <h2>Flashcards</h2>
+    <div id="flashcards"></div>
+
+    <h2>Quizzes</h2>
+    <div id="quizzes"></div>
+  </section>
+
+  <section id="stats">
+    <h2>Progress</h2>
+    <p id="streak">Study streak: 0</p>
+    <p id="points">Points: 0</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
